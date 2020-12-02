@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clip", "Clip2020Api\Clip.csproj", "{1906872F-DFC8-4755-BF87-513C2F1CB3E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clip2020.Services", "Clip2020.Services\Clip2020.Services.csproj", "{6FDCE560-E7F2-4386-8BE0-E26A1CB74E2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{F4C96046-B315-4D2D-BB11-ADE130EB184A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1906872F-DFC8-4755-BF87-513C2F1CB3E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1906872F-DFC8-4755-BF87-513C2F1CB3E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1906872F-DFC8-4755-BF87-513C2F1CB3E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1906872F-DFC8-4755-BF87-513C2F1CB3E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FDCE560-E7F2-4386-8BE0-E26A1CB74E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FDCE560-E7F2-4386-8BE0-E26A1CB74E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FDCE560-E7F2-4386-8BE0-E26A1CB74E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FDCE560-E7F2-4386-8BE0-E26A1CB74E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1906872F-DFC8-4755-BF87-513C2F1CB3E3} = {F4C96046-B315-4D2D-BB11-ADE130EB184A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A274539E-3959-4396-BECF-41AA47F3B848}
+	EndGlobalSection
+EndGlobal
