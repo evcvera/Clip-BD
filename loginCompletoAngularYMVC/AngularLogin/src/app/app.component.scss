@@ -1,0 +1,10 @@
+@import 'src/assets/baseStyles/variable';
+
+.bg-dark{
+  background-color: $color-topic-primary!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  cursor: pointer;
+}

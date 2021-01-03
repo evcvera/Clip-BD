@@ -1,0 +1,13 @@
+@import 'src/assets/baseStyles/variable';
+
+.popup-general-container {
+
+  .popup-header {
+    background-color: $color-topic-primary;
+
+    .popup-title{
+      color: #FFFFFF;
+      padding: 10px;
+    }
+  }
+}

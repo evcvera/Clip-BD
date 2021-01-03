@@ -1,0 +1,12 @@
+@import 'src/assets/baseStyles/variable';
+
+
+.home-container {
+
+  &-nb-card {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border: solid 1px #006d92;
+  }
+}

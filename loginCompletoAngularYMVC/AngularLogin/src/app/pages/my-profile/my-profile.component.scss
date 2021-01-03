@@ -1,0 +1,77 @@
+@import 'src/assets/baseStyles/variable';
+
+
+.my-profile-header {
+  display: flex;
+  align-items: baseline;
+
+  .edit-button-container {
+    margin-left: auto;
+
+    .edit-button-margin {
+      height: 36px;
+      width: 36px;
+      border-radius: 50%;
+      background-color: $color-topic-primary;
+      margin-right: 10px;
+      cursor: pointer;
+      margin-top: 5px;
+
+      .edit-button-icon {
+        color: white;
+        position: relative;
+        top: 6px;
+        right: 6px;
+      }
+    }
+  }
+}
+
+.my-profile-container {
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 500px;
+
+  .line {
+    margin: 0;
+  }
+
+  .name-title {
+    color: $color-topic-primary;
+    font-weight: 700;
+    font-size: 1.75rem;
+  }
+
+  .sub-title {
+    font-weight: 500;
+    margin-right: 5px;
+  }
+
+  .profile-footer-line {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .my-profile-actions {
+    margin-top: 10px;
+
+    .change-password-button {
+      color: #FFFFFF;
+      background-color: $color-topic-primary;
+      margin-right: 10px;
+    }
+
+    .unsubscribe-account-button {
+      float: right;
+      color: #FFFFFF;
+      background-color: $danger;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 350px) {
+  .unsubscribe-account-button, .change-password-button {
+    padding: 6px;
+  }
+}

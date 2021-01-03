@@ -1,0 +1,45 @@
+
+
+<div class="my-profile-container white primary-border">
+
+  <div class="my-profile-header">
+    <h1>Mi perfil</h1>
+    <div class="edit-button-container">
+      <div class="edit-button-margin" popover="Editar perfil" (click)="openDialog()">
+        <span class="material-icons edit-button-icon"> edit </span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="line">
+  <label class="name-title">{{authenticationService.currentUserSubject.value.loginUser.Name}},
+    {{authenticationService.currentUserSubject.value.loginUser.LastName}} </label>
+
+  <br>
+  <label class="sub-title">Cuil: </label>
+  <label>{{authenticationService.currentUserSubject.value.loginUser.Cuil}} </label> <br>
+  <label class="sub-title">Email: </label>
+  <label>{{authenticationService.currentUserSubject.value.loginUser.Email}} </label> <br>
+  <label class="sub-title">Fecha de nacimiento: </label>
+  <label>{{authenticationService.currentUserSubject.value.loginUser.Birthdate | date: 'dd/MM/yyyy'}} </label> <br>
+  <label class="sub-title">Telefono: </label>
+  <label>{{authenticationService.currentUserSubject.value.loginUser.Telephone}} </label> <br>
+  <label class="sub-title">Estado de la cuenta: </label>
+  <label>{{authenticationService.currentUserSubject.value.loginUser.AccountState}} </label> <br>
+  <label class="sub-title">Fecha de alta: </label>
+  <label>{{authenticationService.currentUserSubject.value.loginUser.UpAccountDate | date: 'dd/MM/yyyy'}} </label> <br>
+  <label class="sub-title">Ciudad: </label>
+  <label>{{authenticationService.currentUserSubject.value.loginUser.City}} </label> <br>
+  <label class="sub-title">Codigo postal: </label>
+  <label>{{authenticationService.currentUserSubject.value.loginUser.PostCode}} </label> <br>
+  <label class="sub-title">Direccion: </label>
+  <label>{{authenticationService.currentUserSubject.value.loginUser.Address}} </label> <br>
+  <label class="sub-title">Img?: </label>
+  <label>{{authenticationService.currentUserSubject.value.loginUser.ImgDNI}} </label> <br>
+  <hr class="line profile-footer-line">
+  <div class="my-profile-actions">
+    <button class="btn change-password-button" (click)="openDialog()">Cambiar contraseña</button>
+    <button class="btn unsubscribe-account-button" (click)="openDialog()">Dar de baja</button>
+  </div>
+
+</div>

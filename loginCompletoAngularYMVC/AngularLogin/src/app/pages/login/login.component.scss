@@ -1,0 +1,27 @@
+@import 'src/assets/baseStyles/variable';
+
+.general-login-container{
+  padding: 0 10px;
+}
+
+.new-user{
+  text-align: end;
+}
+
+.login-container {
+  padding: 0 5px;
+}
+
+
+
+.login-button {
+  width: 100%;
+  color: #FFFFFF;
+  background-color: $color-topic-primary;
+}
+
+.alert-bad-login{
+  margin-bottom: 15px !important;
+  text-align: center;
+  font-weight: 500;
+}

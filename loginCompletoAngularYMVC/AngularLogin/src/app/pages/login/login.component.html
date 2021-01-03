@@ -1,0 +1,24 @@
+<ng-container class="general-login-container">
+  <div class="login-container">
+    <form class="login-form" (ngSubmit)="onSubmit()">
+      <div class="new-user">
+        <label> ¿No tienes cuenta?</label>
+        <button class="btn registration-login" type="button" (click)="this.router.navigate(['registration'])">
+          Registrarse
+        </button>
+      </div>
+      <div class="form-group">
+        <label for="username">Email de usuario</label>
+        <input type="text" class="form-control" id="username" placeholder="Ingresá tu email"
+               [formControl]="usernameControl">
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" class="form-control" id="password" placeholder="Contraseña"
+               [formControl]="passwordControl">
+      </div>
+      <div *ngIf="error" class="alert-bad-login alert alert-danger mt-3 mb-0">{{error}}</div>
+      <button type="submit" class="btn registration-submit-button ">Enviar</button>
+    </form>
+  </div>
+</ng-container>

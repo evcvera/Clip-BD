@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e9d77380-35d7-4b0f-91d9-9d087520f468" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/AngularLogin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/models/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/models/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/pages/accounts/accounts.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/pages/accounts/accounts.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/pages/accounts/accounts.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/pages/accounts/accounts.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/pages/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/pages/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/pages/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/pages/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/pages/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/pages/login/login.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/pages/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/pages/registration/registration.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/pages/registration/registration.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/pages/registration/registration.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/pages/registration/registration.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/pages/registration/registration.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/pages/registration/registration.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/services/authentication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/services/authentication.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/app/services/registration.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/app/services/registration.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/assets/baseStyles/_variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/assets/baseStyles/_variable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularLogin/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AngularLogin/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginCompleto/Controllers/LoginController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LoginCompleto/Controllers/LoginController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginCompleto/Controllers/RegistrationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LoginCompleto/Controllers/RegistrationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginCompleto/LoginCompleto.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/LoginCompleto/LoginCompleto.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginCompleto/Models/LoginRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LoginCompleto/Models/LoginRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginCompleto/Models/NewUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LoginCompleto/Models/NewUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginCompleto/Models/NewUserManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LoginCompleto/Models/NewUserManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginCompleto/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LoginCompleto/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginCompleto/Web.config" beforeDir="false" afterPath="$PROJECT_DIR$/LoginCompleto/Web.config" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1livuhPbGkzmqFTII0mewNxbpDK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AngularLogin" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9d77380-35d7-4b0f-91d9-9d087520f468" name="Default Changelist" comment="" />
+      <created>1608092951154</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608092951154</updated>
+      <workItem from="1608092952270" duration="1719000" />
+      <workItem from="1608143518843" duration="2650000" />
+      <workItem from="1608232831918" duration="1816000" />
+      <workItem from="1608314527845" duration="3931000" />
+      <workItem from="1608523978384" duration="103000" />
+      <workItem from="1609305887761" duration="71000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="687" y="216" key="FileChooserDialogImpl" timestamp="1608092964992">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608092964992" />
+  </component>
+</project>

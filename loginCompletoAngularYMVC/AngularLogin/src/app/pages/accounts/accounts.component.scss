@@ -1,0 +1,22 @@
+@import 'src/assets/baseStyles/variable';
+
+.account-card {
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.accounts-header{
+  display: inline-flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.acconunt-header-button{
+  margin-left: auto;
+  background-color: $color-topic-primary;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  height: 40px;
+}

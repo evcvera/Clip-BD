@@ -1,0 +1,15 @@
+<ng-container class="accounts-container ">
+  <div class="w-100 accounts-header">
+    <h1>Cuentas</h1>
+    <button (click)="openDialog()" class="btn acconunt-header-button">Nueva cuenta</button>
+  </div>
+  <ng-container *ngIf="walletAccountService.WalletAccount$ | async as walletAccount">
+    <nb-card *ngFor="let item of walletAccount" class="white primary-border account-card">
+      <label>CBU: {{item.Id}}</label>
+      <label>Tipo: {{item.Type}}</label>
+      <label>Monto: {{item.Balance}}</label>
+      <label>Fecha de creación: {{item.CreatedOn | date: 'dd/MM/yyyy'}}</label>
+    </nb-card>
+  </ng-container>
+</ng-container>
+

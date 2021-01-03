@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" *ngIf="currentUser">
+  <div class="navbar-nav">
+    <a class="nav-item nav-link" routerLink="/">Home</a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" *ngIf="currentUser">
+    <ul class="navbar-nav w-100">
+      <li class="nav-item">
+        <a class="nav-item nav-link" (click)="this.router.navigate(['accounts'])">Cuentas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" (click)="this.router.navigate(['profile'])">Mi perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" *ngIf="!currentUser">
+  <span class="navbar-nav">
+    <a class="nav-item nav-link" (click)="this.router.navigate(['login'])">Ingresar</a>
+    <a class="nav-item nav-link" (click)="this.router.navigate(['registration'])">Registrarse</a>
+  </span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1" *ngIf="!currentUser">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-item nav-link" (click)="this.router.navigate(['registration'])">Registrarse</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" (click)="this.router.navigate(['registration'])">Registrarse</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" (click)="this.router.navigate(['registration'])">Registrarse</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" (click)="this.router.navigate(['registration'])">Registrarse</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!--<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="!currentUser">
+  <div class="navbar-nav">
+    <a class="nav-item nav-link" (click)="this.router.navigate(['login'])">Ingresar</a>
+    <a class="nav-item nav-link" (click)="this.router.navigate(['registration'])">Registrarse</a>
+  </div>
+</nav>-->
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

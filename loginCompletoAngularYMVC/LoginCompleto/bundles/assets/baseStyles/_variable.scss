@@ -1,0 +1,104 @@
+@import 'material-icons/iconfont/material-icons.scss';
+
+// Brand Colors
+$gray: #222222;
+$color-topic-primary: #006d92;
+/*5473E8*/
+$color-brand-gren: #97C750;
+$color-brand-deepblue: #1D5B96;
+$color-brand-pink: #EA148D;
+$color-brand-blue: #3A8FE0;
+$color-brand-danger: #F7685B;
+$color-brand-danger-h: darken($color-brand-danger, 10%);
+$color-brand-warning: #FFB946;
+$color-brand-success: #2ED47A;
+
+// Content Color
+$color-content-black: #333333;
+$color-content-white: #FFFFFF;
+$color-content-deepblue: #2B4469;
+$color-content-gray40: #6f8097;
+$color-content-gray30: #90A0B7;
+$color-content-gray20: #C2CFE0;
+$color-content-gray10: #F5F6F8;
+$color-content-gray: #F8F8FB;
+
+// Color Variations
+$color-primary-100: #adbcf4;
+$color-primary-200: #97aaf1;
+$color-primary-300: #8198ee;
+$color-primary-400: #6a85eb;
+$color-primary-500: $color-topic-primary;
+$color-primary-600: #3e61e5;
+$color-primary-700: #274ee2;
+$color-primary-800: #1c43d3;
+$color-primary-900: #193cbc;
+
+//TagsColors
+$tag-01: $color-brand-warning;
+$tag-02: #F85835;
+$tag-03: #FF43AD;
+$tag-04: #5AAEFF;
+$tag-05: #AC8DFF;
+$tag-06: #89A4FF;
+$tag-07: #6DD3FF;
+$tag-08: #5FF38A;
+$tag-09: #ACE35A;
+$tag-10: #D6E355;
+
+//RRSS colors
+$facebook: #3b5998;
+$twitter: #00acee;
+$instagram: #8034af;
+$linkedin: #0e76a8;
+// Fonts
+//$font-family-primary: Poppins, sans-serif;
+$font-family-secondary: Roboto, sans-serif;
+
+
+.login-form {
+  max-width: 700px;
+  box-shadow: 0 2px 6px 0 rgba(9, 9, 9, 0.15);
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px auto;
+  border: solid 1px #006d92;
+
+  is-valid {
+    background-color: #FFFFFF;
+  }
+}
+
+.registration-login {
+  position: relative;
+  top: 4px;
+  margin-bottom: 10px;
+  color: $color-topic-primary;
+  font-weight: 500;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #F8F8FB;
+  }
+}
+
+.registration-submit-button {
+  width: 100%;
+  color: #FFFFFF;
+  background-color: $color-topic-primary;
+}
+
+form{
+  background-color: white;
+}
+
+.white{
+  background-color: white;
+}
+.material-icons{
+  float: right;
+  color:rgb(194, 183, 183);
+  font-size: 22px;
+}

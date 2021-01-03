@@ -1,0 +1,18 @@
+<div class="popup-general-container ">
+  <div class="popup-header">
+    <h5 class="popup-title">  {{data.title}}   </h5>
+  </div>
+  <mat-dialog-content>
+    <ng-content select="[popup-body]"></ng-content>
+  </mat-dialog-content>
+  <!--<input [(ngModel)]="email">
+  <input [(ngModel)]="password">
+  <input [(ngModel)]="newPassword">
+  <button
+    (click)="editPassword()">Im first button
+  </button>-->
+  <hr class="line">
+  <mat-dialog-actions>
+    <ng-content select="[popup-actions]"></ng-content>
+  </mat-dialog-actions>
+</div>

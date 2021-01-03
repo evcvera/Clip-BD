@@ -1,0 +1,155 @@
+<ng-container *ngIf="!allIsOk" class="registration-container">
+  <div class="registration-form-container">
+    <form class="login-form">
+      <div class="registred-user">
+        <label> ¿Ya tienes cuenta?</label>
+        <button type="button" class="btn registration-login" (click)="this.router.navigate(['login'])"> Iniciar sesión
+        </button>
+      </div>
+
+      <h6>Complete el siguiente formulario</h6>
+      <br>
+      <div class="form-group">
+        <div class="form-group">
+          <input type="text" class="form-control"
+                 [ngClass]="flagName === 0 ? '' : flagName === 2 ? 'is-valid' : 'is-invalid'"
+                 placeholder="Nombre"
+                 name="name" [(ngModel)]="name" (keyup)="firstName()" required>
+          <div class="invalid-feedback">
+            Debe contener al menos 3 caracteres.
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text"
+                 [ngClass]="flagLastName === 0 ? '' : flagLastName === 2 ? 'is-valid' : 'is-invalid'"
+                 placeholder="Apellido"
+                 name="lastName" [(ngModel)]="lastName" (keyup)="userLastName()" required>
+          <div class="invalid-feedback">
+            Debe contener al menos 3 caracteres.
+          </div>
+        </div>
+<!--        <div class="form-group registration-date-picker">
+          <input class="form-control " nbInput placeholder="Fecha de nacimiento" [nbDatepicker]="datepicker" readonly
+                 [ngClass]="flagDate ? 'is-valid' : 'is-invalid'"
+                 [(ngModel)]="date" name="datepicker">
+          <nb-datepicker #datepicker [min]="min" [max]="max"
+                         (dateChange)="selectDate($event)"></nb-datepicker>
+          <div class="invalid-feedback">
+            Debe completar fecha de nacimiento.
+          </div>
+        </div>-->
+        <div class="form-group">
+          <input class="form-control" type="number"
+                 [ngClass]="flagCuil === 0 ? '' : flagCuil === 2 ? 'is-valid' : 'is-invalid'"
+                 placeholder="Cuil"
+                 name="cuil" [(ngModel)]="cuil" (keyup)="cuilUser()" required>
+          <div class="invalid-feedback">
+            Debe contener al menos 10 caracteres.
+          </div>
+        </div>
+        <div *ngIf="flagExistEmail" class="alert alert-danger registration-general-alert" role="alert">
+          EL EMAIL INGRESADO YA SE ENCUENTRA REGISTRADO.
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control"
+                 [ngClass]="flagEmail === 0 ? '' : flagEmail === 2 ? 'is-valid' : 'is-invalid'"
+                 placeholder="Email"
+                 name="email" [(ngModel)]="email" (keyup)="userMail()" required>
+          <div class="invalid-feedback">
+            Debe ser un email valido.
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control "
+                 [ngClass]="flagReEmail === 0 ? '' : flagReEmail === 2 ? 'is-valid' : 'is-invalid'"
+                 placeholder="Repita email"
+                 name="reEmail" [(ngModel)]="reEmail" (keyup)="userReMail()" required>
+          <div class="invalid-feedback">
+            El mail debe coincidir.
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control"
+                 [ngClass]="flagAccountName === 0 ? '' : flagAccountName === 2 ? 'is-valid' : 'is-invalid'"
+                 placeholder="Nombre de cuenta"
+                 name="accountName" [(ngModel)]="accountName" (keyup)="accountNameMet()" required>
+          <div class="invalid-feedback">
+            Debe contener al menos 4 caracteres.
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control"
+                 [ngClass]="flagPassword === 0 ? '' : flagPassword === 2 ? 'is-valid' : 'is-invalid'"
+                 id="exampleInputPassword1" placeholder="Contraseña" name="password" (keyup)="firstPassword()"
+                 [(ngModel)]="password" required>
+          <div class="invalid-feedback">
+            Debe contener al menos 8 caracteres.
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control"
+                 [ngClass]="flagRePassword === 0 ? '' : flagRePassword === 2 ? 'is-valid' : 'is-invalid'"
+                 id="exampleInputPassword2" placeholder="Repita contraseña" name="rePassword" (keyup)="secondPassword()"
+                 [(ngModel)]="rePassword" required>
+          <div class="invalid-feedback">
+            Las contraseñas deben coincidir.
+          </div>
+        </div>
+        <div class="contact100-form-checkbox">
+          <input [(ngModel)]="recordarme" class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+          <label class="label-checkbox100" for="ckb1">
+            Recordar mi usuario
+          </label>
+        </div>
+      </div>
+
+      <div *ngIf="!(flagName === 2 &&
+             flagLastName === 2 &&
+             flagPassword === 2 &&
+             flagAccountName === 2 &&
+             flagRePassword === 2 &&
+             flagDate === true &&
+             flagCuil === 2 &&
+             flagReEmail === 2 &&
+             flagEmail ===2)" class="alert alert-danger registration-general-alert" role="alert">
+        COMPLETE TODOS LOS DATOS
+      </div>
+
+      <button type="button"
+              [disabled]="!(flagName === 2 &&
+             flagLastName === 2 &&
+             flagPassword === 2 &&
+             flagAccountName === 2 &&
+             flagRePassword === 2 &&
+             flagDate === true &&
+             flagCuil === 2 &&
+             flagReEmail === 2 &&
+             flagEmail ===2)"
+              class=" btn registration-submit-button" (click)="submit()">Registrarse
+      </button>
+
+    </form>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="allIsOk" class="registration-container">
+  <div class="alert alert-success login-form success-container" role="alert">
+    <h6>EXITO</h6>
+    <label><b>La cuenta se creo correctamente.</b></label>
+    <label> Nombre : <b>{{name}}</b></label>
+    <label> Apellido : <b>{{lastName}}</b></label>
+    <label> Cuil : <b>{{cuil}}</b></label>
+    <label> Email : <b>{{email}}</b></label>
+    <label> Nombre de cuenta : <b>{{accountName}}</b></label>
+    <label> Contraseña : <b>{{password}}</b></label>
+    <label> Fecha Nacimiento : <b>{{date |date: 'dd/MM/yyyy'}}</b></label>
+    <button class="btn registration-login" (click)="this.router.navigate(['login'])"> Iniciar sesión</button>
+  </div>
+</ng-container>
+
+<!--
+<i class="material-icons md-dark md-inactive"
+popover="sdl;jfb;sadLNfldsjabnf;kn"
+[popoverCloseOnClickOutside]="true"
+[popoverOnHover]="false"
+>contact_support</i> -->
